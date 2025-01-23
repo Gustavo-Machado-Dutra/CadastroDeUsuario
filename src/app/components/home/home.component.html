@@ -1,0 +1,61 @@
+<div>
+    <label for="nome">Nome:</label>
+    <input id="nome" [(ngModel)]="nome" type="text" placeholder="Digite o nome">
+  </div>
+  
+  <div>
+    <label for="telefone">Telefone:</label>
+    <input id="telefone" [(ngModel)]="telefone" type="number" placeholder="Digite a telefone">
+  </div>
+  
+  <div>
+    <label for="email">Email:</label>
+    <input id="email" [(ngModel)]="email" type="text" placeholder="Digite a email">
+  </div>
+  
+  <button (click)="adicionarUsuario()">Adicionar Usuário</button>
+  
+  <!-- Tabela de usuários -->
+
+  @if (usuarios.length > 0){
+  <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+   
+        @for (item of usuarios; track item){
+      <tr>
+        <td>{{ item.nome }}</td>
+        <td>{{ item.telefone }}</td>
+        <td>{{ item.email }}</td>
+      </tr>
+    }
+    </tbody>
+  </table>
+}
+  
+
+
+
+<!-- codigo antigo versao desatualizada
+<table *ngIf="usuarios.length > 0">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <td>{{ usuario.nome }}</td>
+        <td>{{ usuario.telefone }}</td>
+        <td>{{ usuario.email }}</td>
+      </tr>
+    </tbody>
+  </table> -->

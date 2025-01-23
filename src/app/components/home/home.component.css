@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tabela{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    width: 200px;
+    height: 30px;
+}
+
+
+
+
+
+
+/* Estilo para a tabela */
+table {
+    width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+    border-collapse: collapse; /* Remove os espaços entre as bordas das células */
+    margin-top: 20px; /* Espaço acima da tabela */
+  }
+  
+  /* Estilo para o cabeçalho */
+  th {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto em branco */
+    padding: 10px; /* Espaçamento interno */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  /* Estilo para as células de dados */
+  td {
+    border: 1px solid #ddd; /* Borda fina e cinza */
+    padding: 8px; /* Espaçamento interno nas células */
+    text-align: left; /* Alinha o texto à esquerda */
+  }
+  
+  /* Estilo para as linhas alternadas */
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo para linhas pares */
+  }
+  
+  /* Estilo para o efeito de hover */
+  tr:hover {
+    background-color: #ddd; /* Cor de fundo quando o mouse passa sobre a linha */
+  }
+  
