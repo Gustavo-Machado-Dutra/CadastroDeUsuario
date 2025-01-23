@@ -1,3 +1,8 @@
+Cadastro de usuário
+Site feito com a framework angular com typescript
+
+
+<<<<<<< HEAD
 # AngularProjeto
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.3.
@@ -57,3 +62,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# Cadastro-de-usu-rio
+Site feito com a framework angular com typescript
+>>>>>>> 61fca8857b0d70dd95d390f136d58648e9175dd5
