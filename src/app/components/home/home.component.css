@@ -1,28 +1,68 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body{
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
 }
 
 .tabela{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    width: 200px;
-    height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  width: 200px;
+  height: 30px;
 }
 
+/* container geral contendo todos os elementos */
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1920px;
+  margin-right: auto;
+  margin-left: auto;
+}
 
+/* estilizar input */
+.input {
+  max-width: 200px;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 2px 2px 7px 0 rgb(0, 0, 0, 0.2);
+  outline: none;
+  color: dimgray;
+}
 
+/* container dos inputs */
+.container-inputs{
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+}
 
+/* deixar o label e cima do botao */
+.flex{
+  display: flex;
+  flex-direction: column;
+}
+
+/* estilizar botao de adicionar usuarios */
+.addUser {
+  width: 150px;
+  border: 0;
+  padding-block: 1em;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  background: rgb(64, 192, 87);
+  border-radius: 3px;
+  cursor: pointer;
+}
 
 
 /* Estilo para a tabela */
