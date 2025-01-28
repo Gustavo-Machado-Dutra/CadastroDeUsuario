@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @Component({
@@ -11,6 +11,9 @@ import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 })
 
 export class HomeComponent {
+
+  fundoImg: string = 'https://images2.alphacoders.com/954/954227.jpg';
+  
 
   nome: string = '';
   telefone: number | null = null;

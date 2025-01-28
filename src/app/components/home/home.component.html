@@ -1,50 +1,52 @@
-<div class="container">
-  <h1>Cadastrar Usuário</h1>
+<div class="fundo" [ngStyle]="{'background-image': 'url(' + fundoImg + ')'}" >
+  <div class="container">
+    <h1>Cadastrar Usuário</h1>
 
-    <div class="container-inputs">
+      <div class="container-inputs">
 
-      <div class="flex">
-        
-        <input id="nome" [(ngModel)]="nome" type="text" placeholder="Digite o nome">
+        <div class="flex">
+          
+          <input id="nome" [(ngModel)]="nome" type="text" placeholder="Digite o nome">
+        </div>
+
+        <div class="flex">
+      
+          <input id="telefone" [(ngModel)]="telefone" type="number" placeholder="Digite a telefone">
+        </div>
+
+        <div class="flex">
+      
+          <input id="email" [(ngModel)]="email" type="text" placeholder="Digite a email">
+        </div>
       </div>
+      
+      <button (click)="adicionarUsuario()" id="addUser">Adicionar Usuário</button>
 
-      <div class="flex">
-     
-        <input id="telefone" [(ngModel)]="telefone" type="number" placeholder="Digite a telefone">
-      </div>
-
-      <div class="flex">
-     
-        <input id="email" [(ngModel)]="email" type="text" placeholder="Digite a email">
-      </div>
-    </div>
     
-    <button (click)="adicionarUsuario()" id="addUser">Adicionar Usuário</button>
+    <!-- Tabela de usuários -->
 
-  
-  <!-- Tabela de usuários -->
-
-  @if (usuarios.length > 0){
-  <table>
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Telefone</th>
-        <th>Email</th>
-      </tr>
-    </thead>
-    <tbody>
-   
-        @for (item of usuarios; track item){
-      <tr>
-        <td>{{ item.nome }}</td>
-        <td>{{ item.telefone }}</td>
-        <td>{{ item.email }}</td>
-      </tr>
-    }
-    </tbody>
-  </table>
-}
+    @if (usuarios.length > 0){
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Telefone</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+    
+          @for (item of usuarios; track item){
+        <tr>
+          <td>{{ item.nome }}</td>
+          <td>{{ item.telefone }}</td>
+          <td>{{ item.email }}</td>
+        </tr>
+      }
+      </tbody>
+    </table>
+  }
+  </div>
 </div>
   
 
